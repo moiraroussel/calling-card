@@ -42,6 +42,7 @@ body {
     color:rgb(255, 0, 0);
     font-weight: lighter;
     font-style: italic;
+    transition: color 0.8s ease;
 }
 
 /* ---Biografie--- */
