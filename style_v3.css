@@ -3,10 +3,10 @@
     src:  url("fonts/Avara-Bold.woff2") format("woff2");
 }
 
-/* body {
-    background-color: rgb(190, 201, 211);
-    font-family: "Avara-Bold", serif;
-} */
+body {
+    background-color: rgb(105, 7, 7);
+    /* font-family: "Avara-Bold", serif; */
+}
 
 img {
     max-width: 100%;
@@ -17,12 +17,13 @@ img {
     display: grid;
     padding: 15px 15px 15px 15px;
     gap: 15px;
-    grid-template-columns: 5fr 1fr 2fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "name name name . ."
-    "bio text-1 image-1 image-1 image-1"
-    "image-2 image-2 image-2 text-2 ."
-    ". text-3 image-3 image-3 image-3";
+    "name name name name name name name name"
+    "bio bio . . . . . ."
+    "image-1 image-1 text-1 . . . . ."
+    ". . image-2 image-2 text-2 . . ."
+    ". . . . image-3 image-3 text-3 .";
 }
 
 .name {
@@ -70,12 +71,15 @@ img {
 
 .text-1 {
     grid-area: text-1;
+    color: brown;
 }
 
 .text-2 {
     grid-area: text-2;
+    color: brown;
 }
 
 .text-3 {
     grid-area: text-3;
+    color: brown;
 }
