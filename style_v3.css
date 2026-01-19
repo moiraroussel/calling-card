@@ -2,6 +2,10 @@
     font-family: "Avara-Bold";
     src:  url("fonts/Avara-Bold.woff2") format("woff2");
 }
+@font-face {
+    font-family: "MonsieurLaDoulaise-Regular";
+    src:  url("fonts/MonsieurLaDoulaise-Regular.woff2") format("woff2");
+}
 
 body {
     background-color: rgb(0, 0, 0);
@@ -30,17 +34,22 @@ img {
     "text-1 text-2 text-3 .";
 }
 
-.name {
+/* .name {
     grid-area: name;
     margin: 200px;
+} */
+.name {
+    grid-area: name;
+    position: relative;
+    top: 150px;
+    z-index: 1;
 }
 
 .name h1 {
     color:rgb(181, 39, 39);
     /* font-family: "Avara-Bold"; */
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 200px;
+    font-family: "MonsieurLaDoulaise-Regular"; 
+    font-size: 300px;
     line-height: 1;
     margin: 0;
 }
