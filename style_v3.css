@@ -24,14 +24,16 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "name name name name"
-    ". bio . ."
+    ". . bio ."
     "image-4 image-4 image-4 image-4"
-    "image-1 image-1 . ."
+    "image-1 image-1 text-1 text-1"
     "image-1 image-1 image-2 image-2"
     ". . image-2 image-2"
     "image-3 image-3 image-3 image-3"
+    ". text-5 text-5 ."
     ". image-5 image-6 ."
-    "text-1 text-2 text-3 .";
+    ". . text-4 text-4"
+    ". text-2 text-3 .";
 }
 
 /* .name {
@@ -41,7 +43,7 @@ img {
 .name {
     grid-area: name;
     position: relative;
-    top: 150px;
+    top: 170px;
     z-index: 1;
 }
 
@@ -70,7 +72,7 @@ img {
     font-style: italic;
     font-weight: lighter;
     font-family:'Times New Roman', Times, serif;
-    line-height: 1,5;
+    line-height: 1;
     margin: 0;
 }
 
@@ -78,24 +80,29 @@ img {
     grid-area: image-1;
     /* margin-bottom: 200px; */
 }
-/* .image-1 img {
+.image-1 img {
     transition: transform 0.3s ease;
 }
 .image-1 img:hover {
     transform:scale(1.5); 
-} */
+}
 
 .image-2 {
     grid-area: image-2;
 }
-.image-2 img {
+/* .image-2 img {
     box-shadow:0 0 0 rgb(255, 255, 255);
     transition: box-shadow 0.3 ease;
 }
 .image-2 img:hover {
     box-shadow: 0 10px 20px rgb(255, 255, 255);
+} */
+.image-2 img {
+    transition: transform 0.3s ease;
 }
-
+.image-2 img:hover {
+    transform:scale(1.5); 
+}
 .image-3 {
     grid-area: image-3;
 }
@@ -124,5 +131,13 @@ img {
 
 .text-3 {
     grid-area: text-3;
+    color: brown;
+}
+.text-4 {
+    grid-area: text-4;
+    color: brown;
+}
+.text-5 {
+    grid-area: text-4;
     color: brown;
 }
