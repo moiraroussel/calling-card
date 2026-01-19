@@ -26,12 +26,11 @@ img {
     "name name name name"
     ". . bio ."
     "image-4 image-4 image-4 image-4"
-    "image-1 image-1 text-1 text-1"
     "image-1 image-1 image-2 image-2"
-    ". . image-2 image-2"
+    ". text-1 text-1 ."
     "image-3 image-3 image-3 image-3"
     ". text-5 text-5 ."
-    ". image-5 image-6 ."
+    "image-5 image-5 image-6 image-6"
     ". . text-4 text-4"
     ". text-2 text-3 .";
 }
@@ -62,7 +61,7 @@ img {
     font-style: italic;
 } */
 
-.bio {
+/* .bio {
     grid-area: bio;
 }
 
@@ -74,7 +73,7 @@ img {
     font-family:'Times New Roman', Times, serif;
     line-height: 1;
     margin: 0;
-}
+} */
 
 .image-1 {
     grid-area: image-1;
@@ -114,9 +113,21 @@ img {
 .image-5 {
     grid-area: image-5;
 }
+.image-5 img {
+    transition: transform 0.3s ease;
+}
+.image-5 img:hover {
+    transform:scale(1.5); 
+}
 
 .image-6 {
     grid-area: image-6;
+}
+.image-6 img {
+    transition: transform 0.3s ease;
+}
+.image-6 img:hover {
+    transform:scale(1.5); 
 }
 
 .text-1 {
@@ -138,6 +149,6 @@ img {
     color: brown;
 }
 .text-5 {
-    grid-area: text-4;
+    grid-area: text-5;
     color: brown;
 }
