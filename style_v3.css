@@ -6,6 +6,14 @@
     font-family: "MonsieurLaDoulaise-Regular";
     src:  url("fonts/MonsieurLaDoulaise-Regular.woff2") format("woff2");
 }
+@font-face {
+    font-family: "BodoniSvtyTwoSCITCTT-Book";
+    src:  url("fonts/BodoniSvtyTwoSCITCTT-Book.woff2") format("woff2");
+}
+@font-face {
+    font-family: "BodoniSvtyTwoSCITCTT-Book";
+    src:  url("fonts/BodoniSvtyTwoSCITCTT-Book.woff2") format("woff2");
+}
 
 body {
     background-color: rgb(0, 0, 0);
@@ -17,24 +25,38 @@ img {
     height: auto;
 }
 
+/* -------------GRID CONTAINER------------- */
 .grid-container{
     display: grid;
     padding: 15px 0px 15px 0px;
     gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "name name name name"
-    ". . bio ."
-    "image-4 image-4 image-4 image-4"
-    "image-1 image-1 image-2 image-2"
-    ". text-1 text-1 ."
-    "image-3 image-3 image-3 image-3"
-    ". text-5 text-5 ."
-    "image-5 image-5 image-6 image-6"
-    ". . text-4 text-4"
-    ". text-2 text-3 .";
+    ". . . . . . meinname meinname"
+    ". . . . . . bio bio"
+    ". name name name . . . ."
+    "image-4 image-4 image-4 image-4 image-4 image-4 image-4 image-4"
+    "image-1 image-1 image-1 image-1  image-2 image-2 image-2 image-2"
+    "text-1 text-1 . . . . . ."
+    "image-3 image-3 image-3 image-3 image-3 image-3 image-3 image-3"
+    ". . text-5 text-5 . . . ."
+    "image-5 image-5 image-5 image-5 image-6 image-6 image-6 image-6"
+    "text-2 . . . . . . text-3"
+    ". text-4 text-4 text-4 . . . ."
+    "image-7 image-7 image-7 image-7 image-7 image-7 image-7 image-7";
 }
 
+/* -----------MEIN NAME---------- */
+.meinname {
+    grid-area: meinname;
+}
+.meinname h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+
+/* ---------PARIS PROJEKT--------- */
 /* .name {
     grid-area: name;
     margin: 200px;
@@ -42,15 +64,16 @@ img {
 .name {
     grid-area: name;
     position: relative;
-    top: 170px;
+    top: 150px;
     z-index: 1;
 }
 
 .name h1 {
-    color:rgb(181, 39, 39);
+    color:rgb(207, 9, 9);
     /* font-family: "Avara-Bold"; */
-    font-family: "MonsieurLaDoulaise-Regular"; 
-    font-size: 300px;
+    font-family: "BodoniSvtyTwoSCITCTT-Book"; 
+    font-weight: lighter;
+    font-size: 150px;
     line-height: 1;
     margin: 0;
 }
@@ -61,7 +84,8 @@ img {
     font-style: italic;
 } */
 
-/* .bio {
+/* ----------------BIO----------------- */
+.bio {
     grid-area: bio;
 }
 
@@ -73,8 +97,9 @@ img {
     font-family:'Times New Roman', Times, serif;
     line-height: 1;
     margin: 0;
-} */
+}
 
+/* ---------------IMAGES-------------- */
 .image-1 {
     grid-area: image-1;
     /* margin-bottom: 200px; */
@@ -129,26 +154,41 @@ img {
 .image-6 img:hover {
     transform:scale(1.5); 
 }
-
+.image-7 {
+    grid-area: image-7;
+}
+/* ---------------TEXT---------------- */
 .text-1 {
     grid-area: text-1;
-    color: brown;
+    color: rgb(207, 9, 9);
 }
 
-.text-2 {
+/* .text-2 {
     grid-area: text-2;
-    color: brown;
+    color: rgb(207, 9, 9);
 }
 
 .text-3 {
     grid-area: text-3;
-    color: brown;
-}
+    color: rgb(207, 9, 9);
+} */
+
+/* Buchbinden */
 .text-4 {
     grid-area: text-4;
-    color: brown;
+    color: rgb(255, 106, 0);
 }
-.text-5 {
+
+.text-4 p {
+    color: rgb(122, 133, 235);
+    /* font-family: "Avara-Bold"; */
+    font-family: "BodoniSvtyTwoSCITCTT-Book"; 
+    font-weight: lighter;
+    font-size: 150px;
+    line-height: 1;
+    margin: 0;
+}
+/* .text-5 {
     grid-area: text-5;
-    color: brown;
-}
+    color: rgb(207, 9, 9);
+} */
