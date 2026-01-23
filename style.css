@@ -47,7 +47,7 @@ a{
     "image-7 image-7 image-7 image-7 image-7 image-7 image-7"
     "text-3 text-3 text-3 text-3 text-3 text-3 text-3"
     ". bio bio text-5 text-5 . ."
-    ". text-1 . text-2 . name .";
+    ". . . text-2 . name .";
 }
 
 /* -----------MEIN NAME---------- */
@@ -177,10 +177,10 @@ a{
 }
 
 /* ---------------TEXT---------------- */
-.text-1 {
+/* .text-1 {
     grid-area: text-1;
     color: rgb(207, 9, 9);
-}
+} */
 
 .text-2 {
     grid-area: text-2;
@@ -190,12 +190,12 @@ a{
 .text-3 {
     grid-area: text-3;
 }
-.text-3 p {
+/* .text-3 p {
     color: rgb(207, 9, 9);
     font-family: "MonsieurLaDoulaise-Regular";
     font-weight: lighter;
     font-size: 20px;
-}
+} */
 
 .text-5 {
     grid-area: text-5;
