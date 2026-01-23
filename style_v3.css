@@ -30,9 +30,9 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "meinname meinname meinname meinname meinname meinname meinname"
-    ". . bio bio bio . ."
     ". . . name . . ."
     "image-4 image-4 image-4 image-4 image-4 image-4 image-4"
+    ". . bio bio bio . ."
     "image-1 image-1 image-1 image-1 . . ."
     ". . . image-2 image-2 image-2 image-2" 
     "image-3 image-3 image-3 image-3 image-3 image-3 image-3"
@@ -54,6 +54,7 @@ img {
     font-weight: lighter;
     line-height: 1;
     font-size: 250px;
+    top: 200px;
 }
 
 /* ---------PARIS PROJEKT--------- */
@@ -74,7 +75,6 @@ img {
     font-family: "MonsieurLaDoulaise-Regular"; 
     font-weight: lighter;
     font-size: 100px;
-    line-height: 1;
     margin: 0;
 }
 
