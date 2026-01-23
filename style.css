@@ -38,7 +38,6 @@ a{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "meinname meinname meinname meinname meinname meinname meinname"
-    ". . bio bio bio . ."
     "image-4 image-4 image-4 image-4 image-4 image-4 image-4"
     "image-1 image-1 image-1 image-1 . . ."
     ". . . image-2 image-2 image-2 image-2" 
@@ -46,8 +45,9 @@ a{
     "image-5 image-5 image-5 image-5 . . ." 
     ". . . image-6 image-6 image-6 image-6"
     "image-7 image-7 image-7 image-7 image-7 image-7 image-7"
-    ". text-1 . . . text-2 text-2"
-    ". . . name . . .";
+    "text-3 text-3 text-3 text-3 text-3 text-3 text-3"
+    ". bio bio text-5 text-5 . ."
+    ". text-1 . text-2 . name .";
 }
 
 /* -----------MEIN NAME---------- */
@@ -101,17 +101,18 @@ a{
     margin-left: 50px;
     margin-right: 50px;
     z-index: 5; */
+    /* margin-top: 120px; */
 }
 
 .bio p {
     color: rgb(207, 9, 9);
     font-size: 18px;
     /* font-style: italic; */
-    font-family: "BodoniSvtyTwoSCITCTT-Book";
+    /* font-family: "BodoniSvtyTwoSCITCTT-Book"; */
     /* font-family: "MonsieurLaDoulaise-Regular";  */
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* ---------------IMAGES-------------- */
@@ -186,12 +187,23 @@ a{
     color: rgb(207, 9, 9);
 }
 
-/* .text-3 {
+.text-3 {
     grid-area: text-3;
+}
+.text-3 p {
     color: rgb(207, 9, 9);
-} */
+    font-family: "MonsieurLaDoulaise-Regular";
+    font-weight: lighter;
+    font-size: 20px;
+}
 
-/* .text-5 {
+.text-5 {
     grid-area: text-5;
     color: rgb(207, 9, 9);
-} */
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    /* text-align: right; */
+    /* margin-top: 200px; */
+
+}
