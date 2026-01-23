@@ -38,22 +38,22 @@ a{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "meinname meinname meinname meinname meinname meinname meinname"
-    "image-4 image-4 image-4 image-4 image-4 image-4 image-4"
     ". . bio bio bio . ."
+    "image-4 image-4 image-4 image-4 image-4 image-4 image-4"
     "image-1 image-1 image-1 image-1 . . ."
     ". . . image-2 image-2 image-2 image-2" 
     "image-3 image-3 image-3 image-3 image-3 image-3 image-3"
     "image-5 image-5 image-5 image-5 . . ." 
     ". . . image-6 image-6 image-6 image-6"
     "image-7 image-7 image-7 image-7 image-7 image-7 image-7"
-    "text-1 text-1 . . . text-2 text-2"
+    ". text-1 . . . text-2 text-2"
     ". . . name . . .";
 }
 
 /* -----------MEIN NAME---------- */
 .meinname {
     grid-area: meinname;
-    margin-bottom: -150px;
+    /* margin-bottom: -150px; */
     z-index: 5;
 }
 .meinname h1 {
@@ -97,8 +97,10 @@ a{
 /* ----------------BIO----------------- */
 .bio {
     grid-area: bio;
-    margin-bottom: 100px;
-    z-index: 5;
+    /* margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    z-index: 5; */
 }
 
 .bio p {
